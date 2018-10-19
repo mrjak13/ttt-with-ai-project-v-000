@@ -34,10 +34,10 @@ elsif input.chomp.upcase == "Y"
     input = gets
     if input.chomp.upcase == "MAN"
       puts "Man as X vs Machine as O"
-      Game.new.play (player_1=Player::Human("X"), player_2=Player::Computer("O"))
+      Game.new(player_1=Player::Human("X"), player_2=Player::Computer("O")).play
     elsif input.chomp.upcase == "MACHINE"
       puts "Machine as X vs Man as O"
-      Game.new.play (player_1=Player::Computer("X"), player_2=Player::Human("O"))
+      Game.new(player_1=Player::Computer("X"), player_2=Player::Human("O")).play
     end
   elsif input.chomp == "O"
   end

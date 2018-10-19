@@ -19,7 +19,7 @@ elsif input.chomp.upcase == "Y"
     player2 = gets
     puts "#{player2} is O.  Good Luck! We all know #{player1} always wins... cheater"
 
-    game = Game.new.play
+    Game.new.play
 
     # "Ready for a nother round?"
     # input = gets
@@ -29,12 +29,14 @@ elsif input.chomp.upcase == "Y"
     #   puts "Till next time!"
     # end
   elsif input.chomp == "1"
+    puts "Man vs Machine!"
+    puts "Who wants to go first and be X"
+    input = gets
+    if input.chomp.upcase == "MAN"
+      puts "Man as X vs Machine as O"
+      Game.new.play (player_1=Player::Human("X"), player_2=Player::Computer("O"))     
+    end
   elsif input.chomp == "O"
-
-
-
-
-
   end
 
 

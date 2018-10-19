@@ -74,7 +74,7 @@ class Game
     until over?
       puts "Please enter 1-9"
       puts "#{board.display}"
-      turn      
+      turn
     end
     if won?
       puts "Congratulations #{winner}!"

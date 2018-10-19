@@ -21,16 +21,23 @@ elsif input.chomp.upcase == "Y"
 
     game = Game.new.play
 
-    "Ready for a nother round?"
-    input = gets
-    if input.chomp.upcase == "Y"
+    # "Ready for a nother round?"
+    # input = gets
+    # if input.chomp.upcase == "Y"
+    #
+    # elsif input.chomp.upcase == "N"
+    #   puts "Till next time!"
+    # end
+  elsif input.chomp == "1"
+  elsif input.chomp == "O"
 
-    elsif input.chomp.upcase == "N"
-      puts "Till next time!"
-    end
+
+
 
 
   end
+
+
 else puts "Please read to directions"
   ./bin/tictactoe
 end
